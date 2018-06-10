@@ -21,7 +21,7 @@ const renderPath = (cacheId, geography, projection, round, precision) => {
 
   if (cacheId) pathCache[cacheId] = pathString
 
-  return pathString
+  return pathString.split("ZM")[0] + "Z";
 }
 
 class Geography extends Component {
